@@ -37,13 +37,12 @@ print(iris.data[C5_iris.labels_ == 0, 0])
 
 #Visualising the clusters
 plt.scatter(iris.data[C5_iris.labels_ == 0, 2], iris.data[C5_iris.labels_ == 0, 3], s = 100, c = 'red', label = 'Iris-C1')
-#plt.scatter(iris.data[C5_iris == 1, 0], iris.data[C5_iris == 1, 1], s = 100, c = 'blue', label = 'Iris-C2')
-#plt.scatter(iris.data[C5_iris == 2, 0], iris.data[C5_iris == 2, 1], s = 100, c = 'green', label = 'Iris-C3')
-#plt.scatter(iris.data[C5_iris == 3, 0], iris.data[C5_iris == 3, 1], s = 100, c = 'black', label = 'Iris-C4')
-#plt.scatter(iris.data[C5_iris == 4, 0], iris.data[C5_iris == 4, 1], s = 100, c = 'yellow', label = 'Iris-C5')
-
+plt.scatter(iris.data[C5_iris.labels_ == 1, 2], iris.data[C5_iris.labels_ == 1, 3], s = 100, c = 'green', label = 'Iris-C2')
+plt.scatter(iris.data[C5_iris.labels_ == 2, 2], iris.data[C5_iris.labels_ == 2, 3], s = 100, c = 'yellow', label = 'Iris-C3')
+plt.scatter(iris.data[C5_iris.labels_ == 3, 2], iris.data[C5_iris.labels_ == 3, 3], s = 100, c = 'blue', label = 'Iris-C4')
+plt.scatter(iris.data[C5_iris.labels_ == 4, 2], iris.data[C5_iris.labels_ == 4, 3], s = 100, c = 'pink', label = 'Iris-C5')
 #Plotting the centroids of the clusters
-plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:,1], s = 100, c = 'violet', label = 'Centroids')
+plt.scatter(kmeans.cluster_centers_[:, 2], kmeans.cluster_centers_[:,3], s = 100, c = 'violet', label = 'Centroids')
 
 plt.legend()
 
