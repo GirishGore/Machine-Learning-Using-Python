@@ -46,6 +46,7 @@ print (value)
 ## Quick Sort Using Python
 
 def quickSort(arr):
+    
     if len(arr) <= 1:
         return arr
     
@@ -55,7 +56,7 @@ def quickSort(arr):
     right = quickSort([x for x in arr if x > pivot ])
     return quickSort(left) + middle + quickSort(right) 
 
-print(quickSort([5,4,3,2,1]))  
+print(quickSort([5,4,3,2,1,9,8,7,6,10]))  
     
     
 
