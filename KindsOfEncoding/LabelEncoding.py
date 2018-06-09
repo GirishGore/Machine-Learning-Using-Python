@@ -1,6 +1,16 @@
 import pandas as pd  
 
-X = pd.read_csv("./train.csv")
+X = pd.read_csv("E:/EDrive/Python/Machine Learning with Python Tutorials/KindsOfEncoding/train.csv")
+X.shape
+X.columns
+X.describe()
+X.head
+
+X.Property_Area.describe()
+X.Property_Area.unique()
+
+
+
 train = X.copy()
 print(X.head())
 
