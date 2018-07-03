@@ -15,6 +15,7 @@ X , y  = mnist.data , mnist.target
 
 X.shape
 y.shape
+type(X)
 ### 28 by 28 pixel image comes to 784
 
 import matplotlib.pyplot as plt
